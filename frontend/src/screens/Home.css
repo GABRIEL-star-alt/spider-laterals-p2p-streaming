@@ -1,0 +1,59 @@
+#project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#creds,
+#files,
+#search,
+#vds,
+#streamers {
+  flex: 1;
+  margin: 10px;
+}
+
+#creds,
+#files,
+#search,
+#vds,
+#streamers {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#vds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vds video {
+  margin: 5px;
+}
+
+#streamers {
+  flex-basis: 100%;
+}
+
+#streamers h2 {
+  margin-bottom: 10px;
+}
+
+#streamers div {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+#streamers div:hover {
+  background-color: #f0f0f0;
+}
+
+#reqideo,
+#video,
+#videon {
+  border: 1px solid #ddd; /* Add border styling */
+  margin: 5px;
+}
