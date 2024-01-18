@@ -24,7 +24,7 @@ function Home() {
         
         console.log(data.result)
         //processess involved in the bufferobject of the video of the cid 
-
+alert(`${JSON.stringify(data.result)} retrived buffer`)
         await setvideoURL( URL.createObjectURL(new Blob([new Uint8Array(data.result)], { type: 'video/mp4' }))); // Adjust MIME type if needed
         //display of the the buffer object requested
 document.getElementById("buffers").innerHTML=`<div>${JSON.stringify(data.result)}<div>`
@@ -69,6 +69,7 @@ console.log(file)
       });
 
       const result = await response.json();
+      alert(`uploaded content ${JSON.stringify(result)}`)
       console.log(result);
 
       // Handle success or display an error message to the user
