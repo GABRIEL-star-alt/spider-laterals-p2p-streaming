@@ -5,12 +5,12 @@
 ---
 ## specifications
 1.u can see  two buttons at the top 'streamer,non streamer' so if u want to just view the stream enter name click no u will get updated with the list of streamers in the ui and u can click on a name to view his or her stream
-**2.if u select yes your entered name gets displayed in the streamers list but your wont be displayed as soon as u select yes because since this is in the development phase and every stream will have the  same stuff being played from the single cam in ur laptop so to verify that when user clicks the desired name he gets the stream of clicked user only , so when u click a name the browser tab corresponding to that stream will only will turn on its media devices, in this way we can cross check the signaling is properly mapped**
-3. the another section in the application is the upload and retrival of video files so u can type the name in the upload field to specify name of file and select the file and **click upload then the file is converted to buffer and its converted as cid and stored in the created instance of orbitDB database and each entry you add in the database you will have  specific hash for it.**
-4.to search and view the content enter the name of the corresponding video and then u will the request in the console and in the ui .**for now the video cant be viewed only the buffer is being retrived from the response am looking forward for a way to actually transform that into a playable video and its under process**
+2.if u select yes your entered name gets displayed in the streamers list but your wont be displayed as soon as u select yes because since this is in the development phase and every stream will have the  same stuff being played from the single cam in ur laptop so to verify that when user clicks the desired name he gets the stream of clicked user only , so when u click a name the browser tab corresponding to that stream will only will turn on its media devices, in this way we can cross check the signaling is properly mapped
+3. the another section in the application is the upload and retrival of video files so u can type the name in the upload field to specify name of file and select the file and **click upload then the file is converted to buffer and its converted as cid and stored in the created instance of orbitDB database and each entry you add in the database you will have  specific hash for it.
+4.to search and view the content enter the name of the corresponding video and then u will the request in the console and in the ui .**for now the video cant be viewed only the buffer is being retrived from the response am looking forward for a way to actually transform that into a playable video and its under process
 ---
 ### underdevelopment
-**1.stopping stream and displaying the updated users in the ui discarding the left streamer.**
+1.stopping stream and displaying the updated users in the ui discarding the left streamer.**
   **-approaches in work**
 	    *-when the user joins a stream adding him to a room in socket of name`to${streamersid}` so that message can be broadcasted this subset ofpeople and necessary operations like updating the media stream in remote and stuffs can be done*
 **2.display of the actual video content from the buffer array**
